@@ -9,23 +9,37 @@ namespace Petrol
 
         public SqlConnection GetConnection()
         {
+            SqlConnection connection = null;
+
             try
             {
-                SqlConnection connection = new SqlConnection(connectionString);
-                connection.Open(); 
+                connection = new SqlConnection(connectionString);
+                connection.Open();
                 return connection;
             }
             catch (Exception ex)
             {
+                if (connection != null && connection.State == System.Data.ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+
                 throw new Exception("Bağlantı sırasında bir hata oluştu: " + ex.Message);
             }
         }
 
         public void CloseConnection(SqlConnection connection)
         {
-            if (connection != null && connection.State == System.Data.ConnectionState.Open)
+            try
             {
-                connection.Close();
+                if (connection != null && connection.State == System.Data.ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Bağlantı kapatılırken bir hata oluştu: " + ex.Message);
             }
         }
     }

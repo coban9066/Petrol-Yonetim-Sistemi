@@ -38,6 +38,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(186)))), ((int)(((byte)(161)))));
             this.textBox1.Location = new System.Drawing.Point(42, 132);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(190, 22);
@@ -45,6 +46,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(186)))), ((int)(((byte)(161)))));
             this.textBox2.Location = new System.Drawing.Point(42, 192);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
@@ -53,19 +55,21 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(96, 220);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(211)))), ((int)(((byte)(191)))));
+            this.button1.Location = new System.Drawing.Point(77, 220);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(105, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Giriş";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(75, 40);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.label1.Location = new System.Drawing.Point(69, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 46);
             this.label1.TabIndex = 3;
@@ -74,6 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(42, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 16);
@@ -83,6 +88,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(42, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 16);
@@ -93,6 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(157)))), ((int)(((byte)(132)))));
             this.ClientSize = new System.Drawing.Size(282, 334);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
